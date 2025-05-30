@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right top, #c6ffdd, #fbd786, #f7797d);
+    background-attachment: fixed;
+    color: #fff;
+  }
+  
+  /* Utility */
+  .glass {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  /* Navbar */
+  .Navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Introduction Section */
+  .Introduction {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  /* Feature Section */
+  .FeatureSelection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Tiles Section */
+  .tiles {
+    padding: 25px;
+    max-width: 600px;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  /* Charts Section */
+  .charts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .chart-box {
+    flex: 1 1 500px;           /* Try to take 500px, shrink/grow as needed */
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 500px;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+  }
+  
+  
+  
+  
+  /* Blog Tiles */
+  .blogtiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  /* Footer */
+  .Footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    color: #eee;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .charts, .tiles, .FeatureSelection {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
